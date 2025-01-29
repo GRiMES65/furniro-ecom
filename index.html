@@ -31,7 +31,7 @@
                 <li><a href="#"><img src="./icons-and-images/icons/account.svg" alt=""></a></li>
                 <li><a href="#"><img src="./icons-and-images/icons/search.svg" alt=""></a></li>
                 <li><a href="#"><img src="./icons-and-images/icons/wishlist.svg" alt=""></a></li>
-                <li><a href="#"><img src="./icons-and-images/icons/cart.svg" alt=""></a></li>
+                <li><a href="#" id="cartIcon"><img src="./icons-and-images/icons/cart.svg" alt=""></a></li>
             </ul>
         </div>
 
@@ -59,10 +59,13 @@
 
             <div class="categoryContainer">
                 <div class="categoryCard dining">
+                    <img src="./icons-and-images/images/dining.jpg" alt="">
                 </div>
                 <div class="categoryCard living">
+                    <img src="./icons-and-images/images/living.jpg" alt="">
                 </div>
                 <div class="categoryCard bedroom">
+                    <img src="./icons-and-images/images/bedroom.jpg" alt="">
                 </div>
             </div>
 
@@ -210,6 +213,21 @@
             </div>
 
         </div>
+
+        <!-- Shopping Cart Sidebar -->
+    <div id="cartSidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button id="closeCartBtn">&times;</button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div class="cart-total">
+            <h4>Total: <span id="cartTotalPrice">$0.00</span></h4>
+        </div>
+        <button id="checkoutBtn" class="checkout-btn">Checkout</button>
+    </div>
 
 
         <div class="mainContent additionalContent">
