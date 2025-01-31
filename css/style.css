@@ -19,6 +19,8 @@ body {
     height: 100vh;
 }
 
+/*Navbar*/
+
 header {
     display: flex;
     justify-content: space-between;
@@ -54,6 +56,8 @@ li, a {
     display: flex;
     gap: 20px;
 }
+
+/*New Arrivals*/
 
 .newArrivals {
     background-image: url("../icons-and-images/images/new-arrival-bg.jpg");
@@ -135,18 +139,7 @@ li, a {
     cursor: pointer;
 } 
 
-/* .dining {
-    background-image: url("/icons-and-images/images/dining.jpg");
-    
-}
 
-.living {
-    background-image: url("/");
-}
-
-.bedroom {
-    background-image: url("/icons-and-images/images/bedroom.jpg");
-} */
 
 /* Product Cards */
 
@@ -326,10 +319,12 @@ li, a {
 }
 
 .sliderArrow button:disabled {
-    opacity: 0.5; /* Make the button look faded when disabled */
-    cursor: not-allowed; /* Change cursor to indicate the button is disabled */
+    opacity: 0.5; 
+    cursor: not-allowed; 
 }
 
+
+/*footer*/
 
 footer {
     display: flex;
@@ -384,11 +379,11 @@ footer {
 }
 
 /*Shopping Cart*/
-/* Shopping Cart Sidebar */
+
 .cart-sidebar {
     position: fixed;
     top: 0;
-    right: -400px; /* Hide sidebar by default */
+    right: -400px; 
     width: 400px;
     height: 100%;
     background-color: white;
@@ -400,7 +395,7 @@ footer {
 }
 
 .cart-sidebar.open {
-    right: 0; /* Show sidebar */
+    right: 0; 
 }
 
 .cart-header {

@@ -1,3 +1,5 @@
+//Card Slider
+
 const sliderImg = document.querySelectorAll(".sliderImg");
 const sliderContainer = document.querySelector(".sliderContainer");
 const leftArrow = document.querySelector(".sliderArrow .left");
@@ -58,7 +60,7 @@ updateArrows();
 
 //Shopping Cart
 
-// Shopping Cart Logic
+
 const cartSidebar = document.getElementById("cartSidebar");
 const closeCartBtn = document.getElementById("closeCartBtn");
 const cartItemsContainer = document.querySelector(".cart-items");
@@ -67,17 +69,17 @@ const checkoutBtn = document.getElementById("checkoutBtn");
 
 let cart = [];
 
-// Function to open the cart sidebar
+
 function openCart() {
     cartSidebar.classList.add("open");
 }
 
-// Function to close the cart sidebar
+
 function closeCart() {
     cartSidebar.classList.remove("open");
 }
 
-// Function to add an item to the cart
+
 function addToCart(product) {
     const existingItem = cart.find((item) => item.name === product.name);
     if (existingItem) {
@@ -89,7 +91,7 @@ function addToCart(product) {
     openCart();
 }
 
-// Function to update the cart display
+
 function updateCart() {
     cartItemsContainer.innerHTML = "";
     let total = 0;
@@ -119,7 +121,7 @@ function updateCart() {
     cartTotalPrice.textContent = `$${total.toFixed(2)}`;
 }
 
-// Function to increase item quantity
+
 function increaseQuantity(name) {
     const item = cart.find((item) => item.name === name);
     if (item) {
@@ -128,7 +130,7 @@ function increaseQuantity(name) {
     }
 }
 
-// Function to decrease item quantity
+
 function decreaseQuantity(name) {
     const item = cart.find((item) => item.name === name);
     if (item && item.quantity > 1) {
@@ -140,7 +142,7 @@ function decreaseQuantity(name) {
     }
 }
 
-// Event Listeners
+
 closeCartBtn.addEventListener("click", closeCart);
 checkoutBtn.addEventListener("click", () => {
     alert("Thank you for your purchase!");
@@ -149,7 +151,7 @@ checkoutBtn.addEventListener("click", () => {
     closeCart();
 });
 
-// Add event listeners to "Add to Cart" buttons
+
 document.querySelectorAll(".prodCardHoverElements button").forEach((button) => {
     button.addEventListener("click", (e) => {
         const productCard = e.target.closest(".productCards");
@@ -163,11 +165,11 @@ document.querySelectorAll(".prodCardHoverElements button").forEach((button) => {
     });
 });
 
-// Get the cart icon
+
 const cartIcon = document.getElementById("cartIcon");
 
-// Add event listener to open the cart sidebar
+
 cartIcon.addEventListener("click", (e) => {
-    e.preventDefault(); // Prevent the default link behavior
-    openCart(); // Open the cart sidebar
+    e.preventDefault(); 
+    openCart(); 
 });
